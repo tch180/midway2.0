@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-
+import form  from '../forms/forms'
 class forms extends Component {
     render() {
         return (
             <div>
-                Hello from Forms. 
+                Please Print and fill out these forms, to help faciltate a faster visit. 
+
             </div>
         );
     }

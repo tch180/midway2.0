@@ -30,9 +30,9 @@ class navbar extends Component {
                     Lets Chat 
                   </a>
                   <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <Link to='/about'  className="dropdown-item" >
+                  {/* <Link to='/about'  className="dropdown-item" >
                    About 
-                  </Link>
+                  </Link> */}
 
                     <div className="dropdown-divider"></div>
 
