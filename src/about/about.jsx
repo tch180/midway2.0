@@ -1,9 +1,11 @@
-import React, { Component } from 'react';
-import gore from '../images/dr.gore.png';
-import chrio3 from '../images/chrio3.jpg';
-import chiro2 from '../images/chir02.png';
-import Contact from '../about/contact';
+import React, {Component} from 'react';
+// import chrio3 from '../images/chrio3.jpg';
+// import chiro2 from '../images/chir02.png';
 import foundation from '../images/chirorock.jpg'
+// import fallon from '../images/drfallon.jpg';
+// import crawford from '../images/drcrawford.jpg';
+import shamika from '../images/shamika.jpg';
+import crawford from '../images/Crawfie.jpg'
 
 
 
@@ -11,35 +13,71 @@ class about extends Component {
   render() {
     return (
       <div>
-        <div id="imagecarousel" className="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
-          <ol className="carousel-indicators">
-            <li data-target="#imagecarousel" data-slide-to="0" className="active"></li>
-            <li data-target="#imagecarousel" data-slide-to="1"></li>
-            <li data-target="#imagecarousel" data-slide-to="2"></li>
-          </ol>
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img className="d-block w-100 " stlye={{width: '100%', height:'100%'}} src={gore}   alt="First slide" />
-            </div>
-            <div className="carousel-item">
-              <img className="d-block w-100 " stlye={{width: '100%', height:'100%'}} src={foundation} alt="Second slide" />
-            </div>
-            <div className="carousel-item">
-              <img className="d-block w-100" stlye={{width: '100%', height:'100%'}} src={chiro2} alt="Third slide" />
+
+        <div className="card bg-light">
+          <div className="card-header">
+            About Us  
+          </div>
+          <div className="card-body">
+            <h5 className="card-title">Everything you want to know about us</h5>
+            <p className="card-text">Locally owned and operated right in decatur GA, We want to get you better to get you back to your life quicker. 
+            Our Chriropratiors live and work in the atlanta, some teach at life college to help inspire the next generation of Chiropractors.
+            </p>
+            <div className=" bg-light">
+            <img className="card-img-top" src={foundation} alt=""/>
             </div>
           </div>
-          <a className="carousel-control-prev" href="#imagecarousel" role="button" data-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="sr-only">Previous</span>
-          </a>
-          <a className="carousel-control-next" href="#imagecarousel" role="button" data-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="sr-only">Next</span>
-          </a>
         </div>
+
+
+
+
+
+
+          <div className='row my-5' style={{display:'flex', justifyContent: 'space-evenly'}}>
+
+          <div className="card  my-2" style={{ width: '18rem' }}>
+          <img className="card-img-top thumbnail" src={crawford} alt="hello doc" />
+          <div className="card-body">
+            <h5 className="card-title">Dr. Candice Crawford</h5>
+              <p className="card-text"> is a Mississippi native and was licensed in 2012. In 2006, 
+              she graduated from Jackson State University in Jackson, MS with a Bachelor’s degree in Biology and Healthcare Administration. 
+              In 2012,
+              she graduated from Life University in Marietta with her Doctorate of Chiropractic and also matriculated towards her Master’s degree in Sports Health Science. 
+  Dr. Crawford is well qualified to treat most musculoskeletal disorders sustained from either sports injuries or auto accidents. She is highly trained on the clinical approach of musculoskeletal disorders, proper case management, coordinating care with other health care providers, documentation and effective report writing.
+  Dr. Crawford is a member of Alpha Delta Upsilon Professional Chiropractic Sorority and she loves to assist with community and social events within the Metro Atlanta area. Dr. Crawford is here to serve you and your family. Call to schedule your appointment today!
+  
+</p>
+            {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
+          </div>
+        </div>
+
+        {/* <div className="card  my-2" style={{ width: '18rem' }}>
+          <img className="card-img-top" src={fallon} alt="Hello doc2" />
+          <div className="card-body">
+            <h5 className="card-title">Dr. Fallon Johns</h5>
+            <p className="card-text"> Gradute of Life University</p> */}
+            {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
+          {/* </div>
+        </div> */}
+
+        <div className="card my-2" style={{ width: '18rem' }}>
+          <img className="card-img-top" src={shamika} alt="hello doc 3" />
+          <div className="card-body">
+            <h5 className="card-title">Shemeka Watson - Office Manager</h5>
+            <p className="card-text">Our Amazing office manager. </p>
+            {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
+          </div>
+        </div>
+            
+          </div>
+       
+
+
+
       </div>
     );
   }
 }
 
-export default about;   
+export default about;

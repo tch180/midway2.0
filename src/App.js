@@ -7,8 +7,8 @@ import { BrowserRouter as Router, Route, Switch, } from 'react-router-dom';
 import Navbar from '../src/navbar/navbar';
 import HomePage from '../src/homepage/homepage';
 import about from '../src/about/about';
-import service from '../src/service/service';
-import contact from '../src/about/contact';
+// import service from '../src/service/service';
+// import contact from '../src/about/contact';
 import directions from '../src/about/directions';
 import forms from '../src/forms/forms';
 ///////////////
@@ -30,7 +30,7 @@ class App extends Component {
 
             <Switch>
               <Route exact path='/' component={HomePage} />
-              {/* <Route exact path='/about' component={about} /> */}
+              <Route exact path='/about' component={about} />
               {/* <Route exact path='/services' component={service} /> */}
               <Route exact path='/directions' component={directions} />
               <Route exact path='/forms' component={forms}/>

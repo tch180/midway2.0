@@ -1,12 +1,6 @@
 import React, { Component } from "react";
 import Service from '../service/service';
-import image1 from "../images/midway clinci logo 3 (1).JPG";
-import Image from "react-image-resizer";
-import chiro1 from "../images/chiro1.jpg";
-import chiro4 from "../images/midwaychiro.jpg";
-import chir02 from "../images/chir02.png";
-import chrio3 from "../images/chrio3.jpg";
-import mens1 from "../images/menshealth.jpg";
+
 import midwayheader from "../images/midwayheader.jpg";
 import Contact from "../about/contact";
 
@@ -14,6 +8,8 @@ class homepage extends Component {
   render() {
     return (
       <div>
+
+        
         <p className="intro">Welcome To Midway Injury Clinic</p>
         <p className="phonenumber">
           <span>

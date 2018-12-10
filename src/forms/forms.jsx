@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import form  from '../forms/forms'
 class forms extends Component {
     render() {
         return (

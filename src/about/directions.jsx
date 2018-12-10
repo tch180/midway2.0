@@ -4,6 +4,7 @@ import GoogleMapReact from 'google-map-react';
 
 
 
+
 const GoogleMapsComp = ({ text }) => (
     <div style={{
         color: 'white',
@@ -54,19 +55,25 @@ class directions extends Component {
                 <GoogleMapsComp
                         lat={33.7557826}
                         lng={-84.2701927}
+                        
                         text={'Midway Injury Clinc'}
                     />
                 </GoogleMapReact>
+
+
+
+
             </div>
+            {/* <Ornage/> */}
 
                 <div className="container">
-                    <h2>Hours & Address</h2>
-                    <p><i className="fa fa-address-card" aria-hidden="true"> Address:  1089 Columbia Dr Decatur, GA 30030</i>
+                    <h2 className="mt-5">Hours & Address</h2>
+                    <p><i className="fa fa-address-card  " aria-hidden="true"> Address:  1089 Columbia Dr Decatur, GA 30030</i>
                     </p>
-                    <h3><i className="fa fa-phone-square" aria-hidden="true"> Phone Number: (678) 705-3404</i>
-                    </h3>
-                    <h4><i className="fa fa-envelope" aria-hidden="true"> Email: midwayinjuryclinic1089@gmail.com</i>
-                    </h4>
+                   <h2><a style={{color:'black'}} href= 'tel:6787053404'><i className="fa fa-phone-square" aria-hidden="true"  > Phone Number:<br className="mt-1"/> (678) 705-3404</i>
+                    </a></h2> 
+                    <h2 className="mb-5"><i className="fa fa-envelope" aria-hidden="true"> Email: midwayinjuryclinic1089<br/>@gmail.com</i>
+                    </h2>
                     <table className="table table-dark table-hover" style={{ align: 'right' }}>
                         <thead>
                             <tr>

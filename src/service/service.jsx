@@ -2,47 +2,105 @@ import React, { Component } from "react";
 import chiro2 from "../images/chir02.png";
 import chiro1 from "../images/chiro1.jpg";
 import chiro3 from "../images/chrio3.jpg";
+
+
+
+
+
+
 class service extends Component {
+
+
+
+  
+
+
+  
   render() {
     return (
+
+
+
+
+      
       <div>
-        <h3 style={{ textAlign: "left", paddingLeft: "10px" }}>
+        <h3 style={{ textAlign: "center", paddingLeft: "10px" }}>
           Service/Benefits
         </h3>
 
-        <div
-          className=" card bg-light mr-5 ml-5 mt-5 md-5"
-          
-        >
-          <h2>Chiropractic Care</h2>
-          <img className="img2" src={chiro1} style={{ float: "left" }} />
-          Chiropractic care utilizes manual manipulation of the spine to restore
-          the normal movement and position of the spinal vertebrae. It is by
-          far, the single-most effective treatment for minimizing the long-term
-          impact of whiplash injuries, especially when coupled with massage
-          therapy, trigger point therapy, exercise rehabilitation and other soft
-          tissue rehabilitation modalities.
-        </div>
 
-        <div
-          className="card bg-light mr-5 ml-5 mt-5 md-5"
-          style={{
-            paddingTop: "30px",
-            content: "",
-            clear: "both",
-            display: "table"
-          }}
-        >
-          <h2>Physical Therapy/Physiotherapy</h2>
-          <img className="img2" src={chiro2} style={{ float: "right" }} />
-          <ul style={{ listStyleType: "none" }}>
-            <li>
-              Is primarily concerned with the remediation of impairments,
+
+        
+
+        <div className="card bg-light my-4">
+          <img className="mr-3 d-block w-100" src={chiro1} alt="hello" />
+          <div className="media-body">
+            <h5 className="mt-0 mb-1">Chiropractic Care</h5>
+
+
+            <button type="button" className="btn btn-primary my-3" data-toggle="modal" data-target="#exampleModalCenter">
+              Learn More
+      </button>
+
+
+            <div className="modal fade" id="exampleModalCenter" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div className="modal-dialog modal-dialog-centered" role="document">
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <h5 className="modal-title" id="exampleModalLongTitle">Chiropractic Care</h5>
+                    <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div className="modal-body">
+
+                    Chiropractic care utilizes manual manipulation of the spine to restore
+                        the normal movement and position of the spinal vertebrae. It is by
+                        far, the single-most effective treatment for minimizing the long-term
+                        impact of whiplash injuries, especially when coupled with massage
+                        therapy, trigger point therapy, exercise rehabilitation and other soft
+                        tissue rehabilitation modalities.
+      </div>
+                  <div className="modal-footer">
+                    <button type="button" className="btn btn-secondary my-3" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+
+{/* ///////////////
+// CARD 2
+/////////////// */}
+
+ <div className="card bg-light my-4">
+          <img className="mr-3 d-block w-100" src={chiro2} alt="hello1" />
+          <div className="media-body">
+            <h5 className="mt-0 mb-1">Therapy/Physiotherapy</h5>
+
+
+            <button type="button" className="btn btn-primary my-3" data-toggle="modal" data-target="#exampleModalCenter1">
+              Learn More
+      </button>
+
+
+            <div className="modal fade" id="exampleModalCenter1" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle1" aria-hidden="true">
+              <div className="modal-dialog modal-dialog-centered" role="document">
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <h5 className="modal-title1" id="exampleModalLongTitle">Therapy/Physiotherapy</h5>
+                    <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div className="modal-body">
+
+                     Is primarily concerned with the remediation of impairments,
               disabilities, and the promotion of mobility. Focusing on
               functional ability, quality of life and movement potential through
-              examination, evaluation, diagnosis and physical intervention.
-            </li>
-            <li>
+              examination, evaluation, diagnosis and physical intervention. 
               Electric Muscle Stimulation- Is the elicitation of muscle
               contraction using electric impulses. The impulses are generated by
               a device and delivered through electrodes on the skin in direct
@@ -50,20 +108,43 @@ class service extends Component {
               action potential coming from the central nervous system, causing
               the muscle to contract. The electrodes are generally pads that
               adhere to the skin. This procedure increases red blood flow, which
-              carries oxygen to heal tissue and swelling.
-            </li>
-          </ul>
+              carries oxygen to heal tissue and swelling. 
+      </div>
+                  <div className="modal-footer">
+                    <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+{/*   
+///////////////
+// CARD 3
+/////////////// */}
+<div className="card bg-light">
+          <img className="mr-3 d-block w-100" src={chiro3} alt="hello2" />
+          <div className="media-body">
+            <h5 className="mt-0 mb-1">Therapy Service</h5>
 
-        <div
-          className="card bg-light mr-5 ml-5 mt-5 md-5"
-          stlye={{ content: "", clear: "both", display: "table",margin: '25px 50px 75px 100px' }}
-        >
-          <h2>Therapy Service</h2>
-          <img className="img2" src={chiro3} style={{ float: "left" }} />
-          <ul style={{ listStyleType: "none" }}>
-            <li>
-              Cryotherapy- Is used to treat acute soft tissue injuries. Various
+
+            <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter2">
+              Learn More
+      </button>
+
+
+            <div className="modal fade" id="exampleModalCenter2" tabIndex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle2" aria-hidden="true">
+              <div className="modal-dialog modal-dialog-centered" role="document">
+                <div className="modal-content">
+                  <div className="modal-header">
+                    <h5 className="modal-title1" id="exampleModalLongTitle">Therapy Service</h5>
+                    <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div className="modal-body">
+
+                   Cryotherapy- Is used to treat acute soft tissue injuries. Various
               methods include ice packs, ice towels, ice massage, gel packs,
               refrigerant gases and inflatable splints.
               <br />Hydrotherapy- is a method that involves the use of hot water
@@ -79,9 +160,42 @@ class service extends Component {
               reduce friction and assist transmission of the ultrasonic waves.
               Theses waves are absorbed primarily by connective tissue,
               ligaments, tendons, and fascia
-            </li>
-          </ul>
+      </div>
+                  <div className="modal-footer ">
+                    <button type="button" className="btn btn-secondary my-3" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
     );
   }
