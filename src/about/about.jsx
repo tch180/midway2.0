@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-// import chrio3 from '../images/chrio3.jpg';
-// import chiro2 from '../images/chir02.png';
 import foundation from '../images/chirorock.jpg'
-// import fallon from '../images/drfallon.jpg';
-// import crawford from '../images/drcrawford.jpg';
 import shamika from '../images/shamika.jpg';
 import crawford from '../images/Crawfie.jpg'
+// import chrio3 from '../images/chrio3.jpg';
+// import chiro2 from '../images/chir02.png';
+// import fallon from '../images/drfallon.jpg';
+// import crawford from '../images/drcrawford.jpg';
 
 
 
@@ -69,12 +69,7 @@ class about extends Component {
             {/* <a href="#" className="btn btn-primary">Go somewhere</a> */}
           </div>
         </div>
-            
-          </div>
-       
-
-
-
+        </div>
       </div>
     );
   }
