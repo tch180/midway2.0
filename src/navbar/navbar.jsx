@@ -11,6 +11,7 @@ class navbar extends Component {
 
     render() {
         return (
+        
             <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" style={{width: '100%'}}>
             <Link to='/' style={{color:'white'}} className="navbar-brand" >Midway
 
@@ -26,11 +27,13 @@ class navbar extends Component {
                   <Link to='/' className="nav-link">Home <span className="sr-only">(current)</span>
                   </Link>
                 </li>
+
                 <li className="nav-item dropdown">
-                  <Link to='/' className="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <Link to='#' className="nav-link dropdown-toggle" data-target="dropdown-menu"  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Lets Chat 
                   </Link>
-                  <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  <div className="dropdown-menu" id="navbarDropdown" aria-labelledby="navbarDropdown">
                   <Link to='/about'  className="dropdown-item" >
                    About 
                   </Link>
@@ -54,6 +57,9 @@ class navbar extends Component {
               
             </div>
           </nav>
+
+
+
         );
     }
 }
